@@ -809,6 +809,11 @@ void x_init_persistent_path(MyString& hp)
     
 }
 
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    return false;
+}
 
 
 - (void)dealloc {

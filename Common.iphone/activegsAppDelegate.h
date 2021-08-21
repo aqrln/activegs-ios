@@ -158,6 +158,10 @@ extern enum machineSpecsEnum machineSpecs;
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 - (void) showKeyRemapController;
 
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
+
 @property(nonatomic,strong,getter=getEmulatorView) activegsEmulatorController* emulatorController;
 @property(nonatomic,strong,getter=getBrowserView) ACTIVEGS_LAUNCHVIEWCONTROLLER* viewController;
 @property(nonatomic,strong,getter=getInfoView) infoViewController* infoController;
